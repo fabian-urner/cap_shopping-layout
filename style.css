@@ -44,6 +44,7 @@ p {
 /* specific styling */
 .main {
   height: 100vh;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -52,7 +53,6 @@ p {
 }
 
 .card {
-  margin: 2rem;
   border-radius: var(--sz-border-radius);
   width: 40rem;
   min-width: 35rem;
