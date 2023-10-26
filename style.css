@@ -1,0 +1,237 @@
+:root {
+  box-sizing: border-box;
+
+  --clr-button: #4860b9;
+  --clr-gray: #f5f5f5;
+  --clr-white: #fff;
+  --clr-text: #aaa;
+  --clr-text-dark: #333;
+  --clr-shadow: #ddd;
+  --clr-select-border: #eee;
+  --clr-badge: #fffa;
+
+  --clr-shoe-blue: #1f55b0;
+  --clr-shoe-bright-blue: #578bd8;
+  --clr-shoe-red: #da4841;
+  --clr-shoe-green: #989737;
+  --clr-shoe-pink: #d4668e;
+  --clr-shoe-white: var(--clr-white);
+  --clr-shoe-black: #000;
+
+  --sz-border-radius: 2rem;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-gray);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--clr-text-dark);
+  margin: 0;
+}
+
+p {
+  font-size: 1.4rem;
+  color: var(--clr-text);
+  line-height: 150%;
+}
+
+/* specific styling */
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2rem;
+  border-radius: var(--sz-border-radius);
+  width: 40rem;
+  min-width: 35rem;
+  box-shadow: 5px 5px 10px var(--clr-shadow);
+}
+
+.card-header {
+  padding: 0;
+
+  width: 100%;
+  height: 26rem;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.card-header-overlay {
+  height: 100%;
+  position: relative;
+  top: -26rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-image: linear-gradient(transparent 50%, var(--clr-white));
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+
+.card-badge {
+  padding: 0.2rem 1rem;
+  margin-right: 1.5rem;
+
+  font-weight: 600;
+  color: var(--clr-text-dark);
+  background-color: var(--clr-badge);
+  border-radius: 0.4rem;
+}
+
+.card-img-credits {
+  margin-left: 1rem;
+
+  font-size: 1rem;
+  align-self: flex-end;
+  justify-self: self-start;
+}
+
+.card-body {
+  padding: 1.6rem;
+  background-color: var(--clr-white);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.shopping-section {
+  margin-top: 2.5rem;
+  padding: 1.6rem;
+  background-color: var(--clr-gray);
+  border-radius: calc(var(--sz-border-radius) * 0.7);
+}
+
+.price {
+  margin-top: 0;
+  padding: 0.6rem;
+  background-color: var(--clr-white);
+  border-radius: calc(var(--sz-border-radius) * 0.3);
+
+  font-size: 2rem;
+  text-align: center;
+  color: var(--clr-text-dark);
+  font-weight: 500;
+}
+
+.shopping-section select {
+  margin-left: 1.6rem;
+  padding: 0.2rem;
+  width: 5.5rem;
+
+  border: 1px solid var(--clr-select-border);
+  border-radius: calc(var(--sz-border-radius) * 0.2);
+
+  font-family: inherit;
+  color: var(--clr-text-dark);
+}
+
+.shopping-section label {
+  color: var(--clr-text);
+  font-size: 1.4rem;
+}
+
+.card-label-quantitiy {
+  margin-left: 2rem;
+}
+
+.color-picker {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.color-picker p {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+.color {
+  aspect-ratio: 1;
+  width: 2.5rem;
+
+  border-radius: 50%;
+}
+
+.color.blue {
+  background-color: var(--clr-shoe-blue);
+}
+.color.red {
+  background-color: var(--clr-shoe-red);
+}
+.color.black {
+  background-color: var(--clr-shoe-black);
+}
+.color.green-black {
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-shoe-green) 49%,
+    var(--clr-shoe-black) 50%
+  );
+}
+.color.blue-black {
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-shoe-bright-blue) 49%,
+    var(--clr-shoe-black) 50%
+  );
+}
+.color.pink-black {
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-shoe-pink) 49%,
+    var(--clr-shoe-black) 50%
+  );
+}
+.color.red-white {
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-shoe-red) 49%,
+    var(--clr-shoe-white) 50%
+  );
+}
+.color.black-white {
+  background-image: linear-gradient(
+    90deg,
+    var(--clr-shoe-black) 49%,
+    var(--clr-shoe-white) 50%
+  );
+}
+
+.shopping-section button {
+  margin-top: 3rem;
+  width: 100%;
+  height: 4rem;
+
+  border: none;
+  border-radius: calc(var(--sz-border-radius) * 0.2);
+
+  background-color: var(--clr-button);
+  color: var(--clr-white);
+
+  font-family: inherit;
+  font-size: 1.6rem;
+}
