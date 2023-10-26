@@ -180,7 +180,7 @@ p {
   margin: 0 0.2rem;
 
   width: 2.5rem;
-  aspect-ratio: 1;
+  height: 2.5rem;
   border-radius: 50%;
 
   display: grid;
