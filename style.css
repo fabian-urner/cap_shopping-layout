@@ -10,6 +10,8 @@
   --clr-select-border: #eee;
   --clr-badge: #fffa;
 
+  --clr-selected: orange;
+
   --clr-shoe-blue: #1f55b0;
   --clr-shoe-bright-blue: #578bd8;
   --clr-shoe-red: #da4841;
@@ -169,11 +171,33 @@ p {
   line-height: 100%;
 }
 
-.color {
-  aspect-ratio: 1;
-  width: 2.5rem;
+.color-label {
+  display: none;
+}
 
+.color {
+  appearance: none;
+  margin: 0 0.2rem;
+
+  width: 2.5rem;
+  aspect-ratio: 1;
   border-radius: 50%;
+
+  display: grid;
+  place-content: center;
+
+  cursor: pointer;
+}
+
+.color::before {
+  content: "";
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.color:checked::before {
+  box-shadow: 0rem 0rem 0rem 0.2rem var(--clr-selected);
 }
 
 .color.blue {
