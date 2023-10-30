@@ -183,7 +183,7 @@ p {
   height: 2.5rem;
   border-radius: 50%;
 
-  display: grid;
+  display: flex;
   place-content: center;
 
   cursor: pointer;
@@ -192,7 +192,7 @@ p {
 .color::before {
   content: "";
   width: 2.5rem;
-  aspect-ratio: 1;
+  height: 2.5rem;
   border-radius: 50%;
 }
 
