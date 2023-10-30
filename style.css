@@ -45,7 +45,7 @@ p {
 
 /* specific styling */
 .main {
-  height: 100vh;
+  height: 100%;
   padding: 5rem;
   display: flex;
   justify-content: center;
@@ -246,6 +246,8 @@ p {
 }
 
 .shopping-section button {
+  cursor: pointer;
+
   margin-top: 3rem;
   width: 100%;
   height: 4rem;
